@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class user_domicilio extends Model
 {
     use HasFactory;
+    protected $table = 'user_domicilios';
+    protected $fillable = ['user_id,domicilio,numero_exterior,colonia,cp,ciudad'];
 }
